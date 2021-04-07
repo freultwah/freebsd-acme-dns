@@ -1,6 +1,6 @@
-TIMESTAMP = 1610356036
-SHA256 (joohoi-acme-dns-g20200210-19069f5_GH0.tar.gz) = c8f21fea6c2a723066dfa21feaecf82d750e9259f61e9004044e095285243e00
-SIZE (joohoi-acme-dns-g20200210-19069f5_GH0.tar.gz) = 47126
+TIMESTAMP = 1617809564
+SHA256 (joohoi-acme-dns-g20200210-68bb6ab_GH0.tar.gz) = 2f709ed050733a8ce5a0643b051e6a2f3d4ddbec3039d2776de292e4979c5cad
+SIZE (joohoi-acme-dns-g20200210-68bb6ab_GH0.tar.gz) = 47933
 SHA256 (BurntSushi-toml-v0.3.1_GH0.tar.gz) = 6593da894578ba510a470735ffbdc88ce88033094dc5a8f4d3957ab87e18803f
 SIZE (BurntSushi-toml-v0.3.1_GH0.tar.gz) = 42077
 SHA256 (DATA-DOG-go-sqlmock-v1.3.3_GH0.tar.gz) = c22fd1dfd35482bd1c4277137af0622fb222df22efc4c4c501a3eae20cea6ff9
