@@ -1,13 +1,11 @@
 PORTNAME=	acme-dns
 DISTVERSION=	g20220126
-PORTREVISION=	0
-
 CATEGORIES=	dns
 
-MAINTAINER=	raivo@lehma.com
-COMMENT=	A simplified DNS server with a RESTful HTTP API to provide a simple way to automate ACME DNS challenges.
+MAINTAINER=	pmh@hausen.com
+COMMENT=	Limited DNS server with RESTful HTTP API to handle ACME DNS challenges
 
-LICENCE=	MIT
+LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go:modules
