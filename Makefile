@@ -1,13 +1,11 @@
 PORTNAME=	acme-dns
 DISTVERSION=	g20220126
-PORTREVISION=	0
-
 CATEGORIES=	dns
 
-MAINTAINER=	raivo@lehma.com
-COMMENT=	A simplified DNS server with a RESTful HTTP API to provide a simple way to automate ACME DNS challenges.
+MAINTAINER=	mops@punkt.de
+COMMENT=	Limited DNS server with RESTful HTTP API to handle ACME DNS challenges
 
-LICENCE=	MIT
+LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go:modules
@@ -80,5 +78,6 @@ post-install:
 	${MKDIR} ${STAGEDIR}/var/run/acme-dns
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/acme-dns
 	${CP} ${WRKSRC}/config.cfg ${STAGEDIR}${PREFIX}/etc/acme-dns/config.cfg.sample
+	${MV} ${STAGEDIR}${PREFIX}/bin/acme-dns ${STAGEDIR}${PREFIX}/libexec/acme-dns
 
 .include <bsd.port.mk>

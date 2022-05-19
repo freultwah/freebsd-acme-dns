@@ -7,8 +7,8 @@
 # KEYWORD: shutdown
 
 #
-# Add the following lines to /etc/rc.conf[.local] to enable xaps:
-# acme-dns_enable="YES"
+# Add the following lines to /etc/rc.conf[.local] to enable acme-dns:
+# acme_dns_enable="YES"
 #
 
 . /etc/rc.subr
@@ -20,7 +20,7 @@ load_rc_config $name
 
 #defaults
 : ${acme_dns_enable="NO"}
-: ${acme_dns_cmd="/usr/local/bin/acme-dns"}
+: ${acme_dns_cmd="%%PREFIX%%/libexec/acme-dns"}
 : ${acme_dns_pidfile="/var/run/acme-dns/acme-dns.pid"}
 : ${acme_dns_log="/var/log/acme-dns.log"}
 : ${acme_dns_args=""}
