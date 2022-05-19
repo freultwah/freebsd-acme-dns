@@ -2,7 +2,7 @@ PORTNAME=	acme-dns
 DISTVERSION=	g20220126
 CATEGORIES=	dns
 
-MAINTAINER=	pmh@hausen.com
+MAINTAINER=	mops@punkt.de
 COMMENT=	Limited DNS server with RESTful HTTP API to handle ACME DNS challenges
 
 LICENSE=	MIT
@@ -78,5 +78,6 @@ post-install:
 	${MKDIR} ${STAGEDIR}/var/run/acme-dns
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/acme-dns
 	${CP} ${WRKSRC}/config.cfg ${STAGEDIR}${PREFIX}/etc/acme-dns/config.cfg.sample
+	${MV} ${STAGEDIR}${PREFIX}/bin/acme-dns ${STAGEDIR}${PREFIX}/libexec/acme-dns
 
 .include <bsd.port.mk>
